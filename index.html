@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styling.css">
+</head>
+<body>
+ <div class="parent">
+  <button class="start">start</button>
+  <div class="vertical"></div>
+  <div class="first">
+    <div class="hello">
+       <button class="accordion" id="one" ></button>
+       <div class="ractangle"><h1>text1</h1><img src="book.png" alt="Cinque Terre" width="80" height="40"></div>
+    </div>
+    <div class="panel">
+       <button class="button" id="two"></button>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+    </div>
+  </div>
+  <div class="second">
+     <div class="hello">
+         <button class="accordion" id="three" ></button>
+         <div class="ractangle"><h1>text2</h1><img src="book.png" alt="Cinque Terre" width="80" height="40"></div>
+      </div>
+      <div class="panel">
+         <button class="button" id="four"></button>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+      </div>
+  </div>
+  <div class="first">
+     <div class="hello">
+         <button class="accordion" id="five"></button>
+         <div class="ractangle"><h1>text3</h1><img src="book.png" alt="Cinque Terre" width="80" height="40"></div>
+      </div>
+      <div class="panel">
+         <button class="button" id="six"></button>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+      </div>
+  </div>
+  <div class="second">
+     <div class="hello">
+        <button class="accordion" id="seven"></button>
+        <div class="ractangle"><h1>text4</h1><img src="book.png" alt="Cinque Terre" width="80" height="40"></div>
+      </div>
+      <div class="panel">
+         <button class="button" id="eight"></button>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+      </div>
+  </div>
+  <button class="end">end</button>
+ </div>
+ <script>
+var acc = document.getElementsByClassName("hello");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "flex") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "flex";
+    }
+  });
+}
+</script>
+</body>
+
+</html>

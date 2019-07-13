@@ -1,0 +1,236 @@
+
+
+.ractangle{
+  width: 350px;
+  height: 111px;
+  background-color: #f2f2f7;
+  text-align: center;	
+}
+.accordion{
+	width: 30px;
+  height: 111px;
+}
+.accordion:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+  
+}
+
+ p{
+  width: 331px;
+  height: 86.5px;
+  border: solid 1px #f2f2f7;
+  color: #444;
+  cursor: pointer;
+  padding:9px;
+  font-size: 15px;
+  transition: 0.4s;
+
+}
+.button{
+  width: 30px;
+  height: 104.5px;
+  position: relative;
+  top: 16px;
+  
+}
+.button:after{
+ content: '\2716';
+  color: white;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+}
+
+.hello{
+	display:flex;
+	padding-block-start: 20px;
+}
+.panel{
+	display: flex;
+	padding-block-start: 9px;
+	overflow: hidden;  
+    display: none;
+}
+.first{
+position: relative;
+left:320px;
+}
+.second{
+	position: relative;
+	left:770px;
+}
+.start{
+width: 70px;
+height: 32px;
+background-color: #2f9657;
+position: relative;
+left:684px;
+
+}
+.end{
+width: 70px;
+height: 32px;
+background-color: #4c4c4c;
+position: relative;
+left: 702px;
+top:300px
+
+} 
+.vertical { 
+border-left: 2px dashed #4c4c4c; 
+height: 800px; 
+position:absolute; 
+left:746px ; 
+ }
+ #one,#two{
+ background-color: green
+ }
+ #three,#four{
+ background-color:blue;
+ position: relative !important;
+ left: 380px !important;
+ top:0px !important;
+ }
+ #five,#six{
+ 	background-color: #FFA500;
+    position: relative;
+     left: 0px; 
+     top: 0px; 
+ }
+ #seven,#eight{
+ 	background-color:  #4c4c4c;
+ 	position: relative;
+    left: 380px;
+    top: 0
+ }
+ .first img{
+ 	position: relative;
+    left: 111px;
+    top: -55px;
+ }
+ .second img{
+ 	position: relative;
+    left: -111px;
+    top: -55px;
+ }
+
+
+@media only screen and (max-width: 600px) {
+.parent{
+	position: relative;
+}
+.start{
+    width: 70px;
+    height: 32px;
+    background-color: #2f9657;
+    position: relative;
+    left: 333px;
+ }
+ .vertical{
+ 	border-left: 2px dashed #4c4c4c;
+    height: 1100px;
+    position: absolute;
+    left: 371px;
+ }
+
+.ractangle{
+  width: 293.5px;
+  height: 100px;
+  background-color: #f2f2f7;
+  padding: 35px 0px;
+}
+.accordion{
+  width: 293.5px;
+  height: 30px;
+}
+.accordion:after{
+content: '\002B';
+ color: white;
+ font-weight: bold;
+ margin-left: 138px;
+}
+.panel{
+	position: relative;
+    top: -25px;
+}
+p{
+  width: 272.5px;
+  height: 74px;
+  border: solid 1px #f2f2f7;
+  background-color: #ffffff;
+}
+.button{
+  width: 298.5px;
+  height: 30px;
+}
+.button:after {
+    content: '\2716';
+    color: white;
+    font-weight: bold;
+    float: left;
+    margin-left: 124px;
+}
+.first {
+    position: relative;
+    left: -71px;
+}
+.second {
+    position: relative;
+    left: -70px;
+}
+#one{
+    position: relative;
+    left: 289px;
+    top: 138px;
+}
+ }
+ #three{
+    position: relative;
+    left: 291px;
+    top: 137px;
+ }
+ #five{
+    position: relative;
+    left: 291px;
+    top: 141px;
+}
+ #seven{
+    position: relative;
+    left: 289px;
+    top: 136px;
+ }
+ #two{
+ 	position: relative;
+    left: 291px;
+    top: 94px;
+ }
+ #four{
+    position: relative;
+    left: 293px;
+    top: 94px;
+ }
+ #six{
+ 	position: relative;
+    left: 296px;
+    top: 94px;
+ }
+ #eight{
+ 	position: relative;
+    left: 295px;
+    top: 94px;
+}
+ }
+
+ .end{
+ 	position: relative;
+    left: 332px;
+    
+ }
+img{
+	display: none
+}
+}
