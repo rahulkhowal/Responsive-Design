@@ -10,8 +10,9 @@
   <div class="vertical"></div>
   <div class="first">
     <div class="hello">
-       <button class="accordion" id="one" ></button>
+       <button class="accordion" id="one"  ></button>
        <div class="ractangle"><h1>text1</h1><img src="book.png" alt="Cinque Terre" width="80" height="40"></div>
+       <div class="line" style="background-color: green"></div>
     </div>
     <div class="panel">
        <button class="button" id="two"></button>
@@ -22,6 +23,7 @@
      <div class="hello">
          <button class="accordion" id="three" ></button>
          <div class="ractangle"><h1>text2</h1><img src="book.png" alt="Cinque Terre" width="80" height="40"></div>
+         <div class="line" style="background-color: blue"></div>
       </div>
       <div class="panel">
          <button class="button" id="four"></button>
@@ -30,8 +32,9 @@
   </div>
   <div class="first">
      <div class="hello">
-         <button class="accordion" id="five"></button>
+         <button class="accordion" id="five" ></button>
          <div class="ractangle"><h1>text3</h1><img src="book.png" alt="Cinque Terre" width="80" height="40"></div>
+         <div class="line" style="background-color: orange"></div>
       </div>
       <div class="panel">
          <button class="button" id="six"></button>
@@ -40,8 +43,9 @@
   </div>
   <div class="second">
      <div class="hello">
-        <button class="accordion" id="seven"></button>
+        <button class="accordion" id="seven" ></button>
         <div class="ractangle"><h1>text4</h1><img src="book.png" alt="Cinque Terre" width="80" height="40"></div>
+        <div class="line" style="background-color: #4c4c4c"></div>
       </div>
       <div class="panel">
          <button class="button" id="eight"></button>
@@ -51,21 +55,25 @@
   <button class="end">end</button>
  </div>
  <script>
-var acc = document.getElementsByClassName("hello");
-var i;
-
-for (i = 0; i < acc.length; i++) {
+ var acc = document.getElementsByClassName("hello")
+ var accordion=document.getElementsByClassName("accordion")
+ var i;
+  for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
     var panel = this.nextElementSibling;
-    if (panel.style.display === "flex") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "flex";
-    }
-  });
+     panel.style.display = "flex"
+   });
 }
-</script>
+var button=document.getElementsByClassName('button')
+var j;
+for (j=0;j< button.length;j++){
+  button[j].addEventListener("click",function(){
+    this.parentElement.style.display="none";
+    
+  })
+}
+
+ </script>
 </body>
 
 </html>
